@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05. 電商／供應鏈 PM 在流程中的角色 - LLM Wiki</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← 返回 LLM Wiki 知識庫首頁</a>
+        <header>
+            <span class="badge">Wiki 條目 05</span>
+            <span class="badge">PM 協作</span>
+            <h1>電商／供應鏈 PM 在流程中的角色與異常處理</h1>
+        </header>
+
+        <div class="meta-box">
+            <strong>知識摘要：</strong> 說明產品經理（PM）如何串聯行銷營運、倉庫現場與系統開發團隊，制定防呆規則與異常處理機制。
+        </div>
+
+        <h2>一、PM 的三大核心任務</h2>
+        <ol class="content-list">
+            <li><strong>需求翻譯與流程對齊：</strong> 行銷團隊常提出「滿千送贈品」或「組合包優惠」等活動，PM 必須將活動規則翻譯成倉庫系統看得懂的拆單邏輯（例如自動帶出贈品 SKU 並扣庫存），避免倉庫漏寄。</li>
+            <li><strong>異常情境設計（Edge Cases）：</strong> 系統不能只設計「正常流程」。PM 必須提前規劃：如果發生超賣缺貨、超商門市關轉（門市整修無法收件）、或包裹在物流途中遺失時，系統該如何自動標記並通知客服介入。</li>
+            <li><strong>數據追蹤與持續優化：</strong> 監控三大核心指標——<strong>出貨準時率</strong>、<strong>揀貨正確率</strong>與<strong>庫存週轉天數</strong>，找出瓶頸環節並排定系統優化優先順序。</li>
+        </ol>
+
+        <h2>二、跨部門溝通檢查清單（驗收重點）</h2>
+        <ul class="content-list">
+            <li><strong>對營運端：</strong> 確認促銷活動開始前，安全庫存與預扣機制是否已設定完成。</li>
+            <li><strong>對倉儲端：</strong> 確認新功能上線後，現場人員的掃描槍操作步驟是否簡潔、不會增加額外負擔。</li>
+            <li><strong>對工程端：</strong> 確認訂單狀態同步（API 串接）具備重試機制，避免網路瞬斷造成漏單。</li>
+        </ul>
+    </div>
+</body>
+</html>
