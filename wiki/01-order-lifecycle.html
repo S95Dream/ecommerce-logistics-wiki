@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01. 電商訂單到出貨的生命週期 - LLM Wiki</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← 返回 LLM Wiki 知識庫首頁</a>
+        <header>
+            <span class="badge">Wiki 條目 01</span>
+            <span class="badge">核心流程</span>
+            <h1>電商訂單到出貨的生命週期（Order Lifecycle）</h1>
+        </header>
+
+        <div class="meta-box">
+            <strong>知識摘要：</strong> 解析消費者在電商前台按下結帳後，訂單資訊如何流轉至倉庫，並完成實體揀貨、包裝與交寄的完整生命週期。
+        </div>
+
+        <h2>一、核心定義</h2>
+        <p>訂單生命週期（Order Lifecycle）是指一筆訂單從「買家建立訂單」到「包裹成功送達買家手中」的全部狀態變化。背後仰賴<strong>資訊流（OMS 訂單系統 / WMS 倉儲系統）</strong>與<strong>實體貨物流</strong>的同步運作。</p>
+
+        <h2>二、標準六大階段流程</h2>
+        <ol class="content-list">
+            <li><strong>下單與庫存預扣：</strong> 消費者結帳瞬間，系統將商品轉為「已保留庫存」，防止同一秒多人搶購造成超賣。</li>
+            <li><strong>審單（Order Review）：</strong> 系統自動檢查付款狀態、收件地址完整性、是否為黑名單或異常大單。</li>
+            <li><strong>派單至倉庫（WMS）：</strong> 通過審核的訂單傳送至倉庫管理系統，系統依配送方式（宅配／超商）與儲位規劃揀貨波次。</li>
+            <li><strong>揀貨（Picking）與理貨（Sorting）：</strong> 倉管人員依據揀貨單到貨架取貨，並將不同買家的多件商品分門別類放進對應訂單籃。</li>
+            <li><strong>複核與打包（Checking & Packing）：</strong> 掃描商品條碼確認品項數量無誤，放入紙箱與緩衝材，並列印物流託運單貼於外箱。</li>
+            <li><strong>交寄出貨（Shipping）：</strong> 物流司機到倉收件並刷取託運單條碼，訂單狀態正式更新為「已出貨」。</li>
+        </ol>
+
+        <h2>三、常見誤區與檢查點</h2>
+        <ul class="content-list">
+            <li><strong>誤區：</strong> 以為買家付款完成就代表倉庫已經開始打包。</li>
+            <li><strong>檢查重點：</strong> 必須確認中間的「審單」與「庫存分配」狀態正常，否則訂單會卡在待處理區，導致延遲出貨。</li>
+        </ul>
+    </div>
+</body>
+</html>
