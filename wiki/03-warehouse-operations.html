@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03. 倉儲作業與自動化辨識效率 - LLM Wiki</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← 返回 LLM Wiki 知識庫首頁</a>
+        <header>
+            <span class="badge">Wiki 條目 03</span>
+            <span class="badge">倉儲現場</span>
+            <h1>倉儲作業與自動化辨識效率</h1>
+        </header>
+
+        <div class="meta-box">
+            <strong>知識摘要：</strong> 介紹倉庫從商品入庫、儲位上架、動線揀貨到條碼掃描防呆的運作邏輯，說明自動化辨識如何降低人為出錯率。
+        </div>
+
+        <h2>一、倉內四大標準作業（SOP）</h2>
+        <ol class="content-list">
+            <li><strong>入庫驗收（Receiving）：</strong> 廠商送貨到倉時，清點數量、檢查外箱是否破損與效期，確認無誤後才入帳。</li>
+            <li><strong>儲位上架（Put-away）：</strong> 將商品放入指定編號的貨架（例如 <code>A01-02-03</code>），並在系統建立「商品與儲位」的綁定關係。</li>
+            <li><strong>動線揀貨（Picking）：</strong> 透過「批次揀貨（把多張訂單的同一商品一次拿齊）」與 S 型動線規劃，大幅減少人員步行距離。</li>
+            <li><strong>盤點（Cycle Counting）：</strong> 定期核對系統帳面庫存與貨架實際數量是否一致。</li>
+        </ol>
+
+        <h2>二、條碼與自動化辨識的角色</h2>
+        <ul class="content-list">
+            <li><strong>消除同款不同色／尺寸錯誤：</strong> 許多服飾或 3C 配件外觀極度相似，純靠肉眼極易拿錯。</li>
+            <li><strong>系統強制防呆：</strong> 揀貨與打包台配置條碼掃描器，刷取商品國際條碼（EAN/UPC）或庫內碼（SKU），若與訂單不符，系統立刻鎖定並發出警示，將出貨錯誤率壓到最低。</li>
+        </ul>
+
+        <h2>三、常見誤區與檢查點</h2>
+        <ul class="content-list">
+            <li><strong>誤區：</strong> 認為商品只要放進倉庫就算完成上架。</li>
+            <li><strong>檢查重點：</strong> 沒有完成「儲位綁定」與「條碼建檔」的商品，在系統裡等於隱形，後續揀貨人員將完全找不到貨。</li>
+        </ul>
+    </div>
+</body>
+</html>
