@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02. 庫存管理核心觀念 - LLM Wiki</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← 返回 LLM Wiki 知識庫首頁</a>
+        <header>
+            <span class="badge">Wiki 條目 02</span>
+            <span class="badge">庫存控管</span>
+            <h1>庫存管理核心觀念：安全庫存與補貨點</h1>
+        </header>
+
+        <div class="meta-box">
+            <strong>知識摘要：</strong> 釐清「安全庫存」與「補貨點」的定義差異與計算邏輯，協助營運與 PM 平衡缺貨損失與庫存積壓風險。
+        </div>
+
+        <h2>一、核心概念對照</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>指標名稱</th>
+                    <th>核心目的</th>
+                    <th>白話理解</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>安全庫存（Safety Stock）</strong></td>
+                    <td>防範需求突然暴增或供應商延遲交貨的緩衝底線。</td>
+                    <td>平常盡量不動用的「緊急備用庫存」。</td>
+                </tr>
+                <tr>
+                    <td><strong>補貨點（Reorder Point, ROP）</strong></td>
+                    <td>觸發採購人員「該向廠商下單叫貨」的庫存水位警戒線。</td>
+                    <td>看到水位降到這條線，就要立刻叫貨，否則貨送到前會見底。</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>二、補貨點計算邏輯</h2>
+        <p><strong>補貨點（ROP）＝（平均每日銷售量 × 供應商進貨前置天數）＋ 安全庫存</strong></p>
+        <ul class="content-list">
+            <li><strong>計算範例：</strong> 某款商品平均每天賣 10 件，向廠商叫貨需要 5 天才會送到倉庫，安全庫存設定為 20 件。</li>
+            <li><strong>警戒水位：</strong> （10 × 5）＋ 20 ＝ <strong>70 件</strong>。當系統可用庫存降到 70 件時，系統就必須發出補貨提醒。</li>
+        </ul>
+
+        <h2>三、常見誤區與檢查點</h2>
+        <ul class="content-list">
+            <li><strong>誤區：</strong> 直接把「安全庫存」當成「補貨點」，等到庫存只剩安全庫存才叫貨，結果在進貨等待期間直接賣到缺貨。</li>
+            <li><strong>檢查重點：</strong> 檢視教學內容時，務必確認兩者定義分開說明，且補貨點數值必定大於安全庫存。</li>
+        </ul>
+    </div>
+</body>
+</html>
