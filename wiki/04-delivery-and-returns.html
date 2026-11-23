@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04. 物流配送與退換貨處理 - LLM Wiki</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← 返回 LLM Wiki 知識庫首頁</a>
+        <header>
+            <span class="badge">Wiki 條目 04</span>
+            <span class="badge">正逆物流</span>
+            <h1>物流配送與退換貨（逆物流）處理</h1>
+        </header>
+
+        <div class="meta-box">
+            <strong>知識摘要：</strong> 比較宅配與超商取貨的物流特性，並說明消費者退貨後，包裹回到倉庫進行拆包質檢與庫存回補的逆物流流程。
+        </div>
+
+        <h2>一、正向物流：宅配 vs 超商取貨</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>配送方式</th>
+                    <th>適用商品特性</th>
+                    <th>主要優勢與限制</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>宅配到府</strong></td>
+                    <td>大型家電、箱購重物、生鮮冷藏品。</td>
+                    <td>無嚴格材積限制，但若收件人不在家需多次聯繫投遞。</td>
+                </tr>
+                <tr>
+                    <td><strong>超商取貨（店到店）</strong></td>
+                    <td>服飾、美妝、小型 3C 與日常消耗品。</td>
+                    <td>台灣消費者取貨率高、時間彈性，但嚴格限制長寬高總和 $\le 105\text{ cm}$ 與重量 $\le 5\text{ kg}$。</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>二、逆物流（退換貨）標準處理流程</h2>
+        <ol class="content-list">
+            <li><strong>退貨申請與物流取件：</strong> 買家於前台申請退貨，產生退貨便代碼或派車逆物流收回包裹。</li>
+            <li><strong>退貨入倉與拆包質檢（關鍵關卡）：</strong> 倉庫收到退貨包裹後，必須錄影拆箱檢查商品外觀、配件與吊牌是否完整。</li>
+            <li><strong>庫存分類處置：</strong>
+                <ul>
+                    <li><strong>良品：</strong> 確認全新無損後，重新刷碼上架並加回前台「可販售庫存」。</li>
+                    <li><strong>不良品／瑕疵品：</strong> 移入隔離區，視情況進行整新、報廢或向供應商退換。</li>
+                </ul>
+            </li>
+            <li><strong>觸發財務退款：</strong> 倉庫確認驗收無誤後，系統才通知財務執行退款給買家。</li>
+        </ol>
+
+        <h2>三、常見誤區與檢查點</h2>
+        <ul class="content-list">
+            <li><strong>誤區：</strong> 退貨包裹一回到倉庫，系統就直接把庫存加回去賣給下一位客人。</li>
+            <li><strong>檢查重點：</strong> 必須先經過「質檢判定為良品」才能加回可販售庫存，否則會把破損或用過的退貨商品寄給新買家。</li>
+        </ul>
+    </div>
+</body>
+</html>
